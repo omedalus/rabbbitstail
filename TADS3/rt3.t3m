@@ -22,6 +22,8 @@
 -lib adv3/adv3web
 -source rt3
 -source versionInfo
+-source roomStage
+-source actorRachel
 
 -res
 GameInfo.txt

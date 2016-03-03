@@ -4,7 +4,7 @@
 #include <en_us.h>
 
 gameMain: GameMainDef
-    initialPlayerChar = me
+    initialPlayerChar = actorRachel
     
     showIntro()
     {
@@ -43,25 +43,5 @@ gameMain: GameMainDef
     
 ;
 
-stageRoom: Room 
-    roomName = 'Stage'
-    desc = "The stage of The Rabbit's Tail, for better or worse, affords 
-        the dancer a view of the entire club floor. That includes her own 
-        backside, what with the floor-to-ceiling mirrors squaring off in the 
-        corner. When she's grinding against that giant brass pole, the scene 
-        from below makes her look like a small army of synchronized sexlings, 
-        a kaleidoscope of tits and legs and lips of both kinds.<.p>        
-        At the moment, that dancer is me. As the ever-present speakers blast out 
-        their meaningless tunes, I shake and gyrate beneath the glare of the 
-        blinding stage lights. Whether the club is empty or packed, I know 
-        everyone's eyes are on me up here. I'd be lying if I said I didn't 
-        kinda love it."
-
-
-;
-
-+ me: Actor
-    pcReferralPerson = FirstPerson
-;
 
 
