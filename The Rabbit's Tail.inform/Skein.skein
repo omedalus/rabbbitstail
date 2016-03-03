@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x00CB9DD8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x00CB9DD8"/>
+  <item nodeId="node-0x00CB9DD8">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Layla Joy called me this morning.&#x000A;&#x000A;Man, last time I saw that innocent little thing, I was a senior and she was a freshman and she was still trying to figure out how boobs work. She must be just barely eighteen by now. Anyway, she was sobbing on the phone, hysterical. Something happened to her back in that little dead-end town we once both called home. Something awful. I had the good sense to not ask for details. But I knew, whatever it was, it meant she had to get the hell out of there, fast. Well, I know a thing or two about how that goes. And there ain't much good I can say about growing up in Texas, but one thing I learned for sure is to always take care of a friend in need. So I told her, "Girl, don't waste one more minute. I've got a place of my own, and a couch you can stay on for as long as you need. Get your ass to Los Angeles."&#x000A;&#x000A;Here's the thing, though. My lifestyle might be a little more, shall we say, "racey" than a girl like Layla Joy can handle. That's the whole reason I left, after all. It's just how I'm wired. There's the kind of girls who belong in home towns, and there's the kind of girls that belong out here on the Sunset Strip.&#x000A;&#x000A;That apartment of mine, for example. It doesn't come cheap. And today's the first of the month. That's both good news and bad. The good news is that it means the fellas just got their paychecks. The bad news is that rent is due, and I'm short. By a full grand. So unless I want both LJ and myself to be sleeping on the beach this weekend, I know what I've got to do. Work.&#x000A;&#x000A;The Rabbit's Tail&#x000A;An Interactive Fiction by Evangeline Erotica&#x000A;Release 1 / Serial number 160303 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x030A5760"/>
+      <child nodeId="node-0x0313D090"/>
+      <child nodeId="node-0x0313CFB0"/>
+      <child nodeId="node-0x0313D2C0"/>
+      <child nodeId="node-0x0D55EBA8"/>
+      <child nodeId="node-0x0D55F548"/>
+      <child nodeId="node-0x0D55F7E8"/>
+      <child nodeId="node-0x03112088"/>
+      <child nodeId="node-0x03112948"/>
+      <child nodeId="node-0x03112B78"/>
+      <child nodeId="node-0x03112C58"/>
+      <child nodeId="node-0x03116410"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5760">
+    <command xml:space="preserve">l rag</command>
+    <result xml:space="preserve">A dry denim rag for wiping down the stage between sets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5300">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5680"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5680">
+    <command xml:space="preserve">check time</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5140"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5140">
+    <command xml:space="preserve">t rag</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5610"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5610">
+    <command xml:space="preserve">take rag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5290"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5290">
+    <command xml:space="preserve">use rag</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A56F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A56F0">
+    <command xml:space="preserve">wipe stage</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5840">
+    <command xml:space="preserve">wipe pole</command>
+    <result xml:space="preserve">You rub the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5370"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5370">
+    <command xml:space="preserve">wipe pole with rag</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wipe the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A51B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A51B0">
+    <command xml:space="preserve">look at pole</command>
+    <result xml:space="preserve">Dancers are expected to take the demin rag and give the pole a quick courtesy wipe for the next girl when their set finishes. Otherwise, the brass finish gets a little, um, spotty. In practice, hardly any ofthe girls ever remember, or care.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5220"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5220">
+    <command xml:space="preserve">look in mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D5D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D5D0">
+    <command xml:space="preserve">look at mirror</command>
+    <result xml:space="preserve">Back in Texas, I was an eight. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm tall, and I can pull off some seriously sultry pouts if I do say so myself. But let's face it: the only reason the boys pay to see me is for the simple fact that I'm practically naked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313D090">
+    <command xml:space="preserve">wipe pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D330"/>
+      <child nodeId="node-0x0313D100"/>
+      <child nodeId="node-0x0313D170"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D330">
+    <command xml:space="preserve">wipe pole with rag</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wipe the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313D100">
+    <command xml:space="preserve">take rag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D410"/>
+      <child nodeId="node-0x0313CBC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D410">
+    <command xml:space="preserve">wipe pole with rag</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wipe the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CC30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CC30">
+    <command xml:space="preserve">wipe pole</command>
+    <result xml:space="preserve">I can't just rub my hand on it. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313CBC0">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313D170">
+    <command xml:space="preserve">clean pole</command>
+    <result xml:space="preserve">You rub the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CE60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CE60">
+    <command xml:space="preserve">kiss pole</command>
+    <result xml:space="preserve">You can only do that to something animate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D1E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D1E0">
+    <command xml:space="preserve">buff pole</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CAE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CAE0">
+    <command xml:space="preserve">scrub pole</command>
+    <result xml:space="preserve">You rub the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D6B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D6B0">
+    <command xml:space="preserve">polish pole</command>
+    <result xml:space="preserve">You rub the pole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313CFB0">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CCA0"/>
+      <child nodeId="node-0x0D55F388"/>
+      <child nodeId="node-0x0D55F938"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CCA0">
+    <command xml:space="preserve">take rag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CD80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CD80">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F388">
+    <command xml:space="preserve">look in mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F008"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F008">
+    <command xml:space="preserve">look in the mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EEB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EEB8">
+    <command xml:space="preserve">examine mirror</command>
+    <result xml:space="preserve">Back in Texas, I was a freakin" nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm tall, and I can pull off some seriously sultry pouts if I do say so myself. But let's face it: the only reason the boys pay to see me is for the simple fact that I'm practically naked. It's a sad truth, but it's a truth that pays the bills.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F2A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F2A8">
+    <command xml:space="preserve">examine</command>
+    <result xml:space="preserve">(the dry denim rag)&#x000A;A dry denim rag for wiping down the stage between sets.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F938">
+    <command xml:space="preserve">rub stage</command>
+    <result xml:space="preserve">Look, there are things around here that are okay to rub, and things that aren't, alright?&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F9A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F9A8">
+    <command xml:space="preserve">look stage</command>
+    <result xml:space="preserve">The stage rises a few feet above the club floor. It spans the entire back wall of The Rabbit's Tail. On one end is a short flight of stairs - without them, we'd never be able to climb up here in our giant platform heels.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F858"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F858">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corner. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sex, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D250"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D250">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A50D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A50D0">
+    <command xml:space="preserve">take rag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112168"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112168">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I bust out the cloth, and give the pole a quick but vigorous rubdown. Who'm I kidding? This ain't the first time I've done that, and it won't be the last.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313D2C0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CF40"/>
+      <child nodeId="node-0x0313CD10"/>
+      <child nodeId="node-0x0D55F4D8"/>
+      <child nodeId="node-0x0D55EDD8"/>
+      <child nodeId="node-0x0313D020"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CF40">
+    <command xml:space="preserve">l mirror</command>
+    <result xml:space="preserve">Back in Texas, I was an eight. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm tall, and I can pull off some seriously sultry pouts if I do say so myself. But let's face it: the only reason the boys pay to see me is for the simple fact that I'm practically naked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313DA30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313DA30">
+    <command xml:space="preserve">l rag</command>
+    <result xml:space="preserve">A dry denim rag for wiping down the stage between sets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D8E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D8E0">
+    <command xml:space="preserve">l pole</command>
+    <result xml:space="preserve">Dancers are expected to take the demin rag and give the pole a quick courtesy wipe for the next girl when their set finishes. Otherwise, the brass finish gets a little, um, spotty. In practice, hardly any ofthe girls ever remember, or care.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313CD10">
+    <command xml:space="preserve">dance</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D950"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D950">
+    <command xml:space="preserve">danceness</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F4D8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F0E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F0E8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031127F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031127F8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031120F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031120F8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031124E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031124E8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my lips and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112558"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112558">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my ass cheeks and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112D38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112D38">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112A28"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112A28">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031122B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031122B8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031128D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031128D8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my lips and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55EDD8">
+    <command xml:space="preserve">look in mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55ECF8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55ECF8">
+    <command xml:space="preserve">look in the mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F5B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F5B8">
+    <command xml:space="preserve">examine mirror</command>
+    <result xml:space="preserve">Back in Texas, I was a freakin" nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm tall, and I can pull off some seriously sultry pouts if I do say so myself. But let's face it: the only reason the boys pay to see me is for the simple fact that I'm practically naked. It's a sad truth, but it's a truth that pays the bills.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0313D020">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  an ankle clip (being worn)&#x000A;  a pair of platform heels (being worn)&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my ass cheeks and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D720"/>
+      <child nodeId="node-0x0D55F778"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D720">
+    <command xml:space="preserve">look clip</command>
+    <result xml:space="preserve">I have a fancy ankle bracelet specially designed for holding money. RIght now I'm carrying $1 in it.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my lips and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D790"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D790">
+    <command xml:space="preserve">look clip</command>
+    <result xml:space="preserve">I have a fancy ankle bracelet specially designed for holding money. RIght now I'm carrying $2 in it.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my ass cheeks and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313D800"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313D800">
+    <command xml:space="preserve">look clip</command>
+    <result xml:space="preserve">I have a fancy ankle bracelet specially designed for holding money. RIght now I'm carrying $3 in it.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0313CDF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0313CDF0">
+    <command xml:space="preserve">remove clip</command>
+    <result xml:space="preserve">You take off the ankle clip.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112868"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112868">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  an ankle clip&#x000A;  a pair of platform heels (being worn)&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F778">
+    <command xml:space="preserve">remove clip</command>
+    <result xml:space="preserve">No way, Jose. That ankle clip is holding my money right where I can see it - and that dough is the whole reason I'm here tonight. Or, you know, ever.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030A5530"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030A5530">
+    <command xml:space="preserve">remove heels</command>
+    <result xml:space="preserve">Look, the platform heels add eight freaking inches to my height. That's empowering as all hell, yo. If I was to pad around barefoot around here, I'd just be a tiny, scared, unnoticeable little thing. And that's what real life is like. No thank you. In here, I can be something more. So the shoes stay on unless there's a damn good reason to take them off.&#x000A;&#x000A;I grind my crotch against the pole to the beat of the music.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55EBA8">
+    <command xml:space="preserve">rub stage</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F238"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F238">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EC18"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EC18">
+    <command xml:space="preserve">take rag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EC88"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EC88">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">I can't just rub my hand on the pole. I'll get my fingerprint smudges all over it, which kinda defeats the purpose.&#x000A;I bust out the cloth, and give the pole a quick but vigorous rubdown. Who'm I kidding? This ain't the first time I've done that, and it won't be the last.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F548">
+    <command xml:space="preserve">look in mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EF98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EF98">
+    <command xml:space="preserve">look in floor</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EA58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EA58">
+    <command xml:space="preserve">look in ceiling</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F628"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F628">
+    <command xml:space="preserve">look in pole</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0D55F7E8">
+    <command xml:space="preserve">look at the pole</command>
+    <result xml:space="preserve">Dancers are expected to take the denim rag and give the pole a quick courtesy wipe for the next girl when their set finishes. Otherwise, the brass finish gets a little, um, spotty. In practice, hardly any of the girls ever remember, or care.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55F3F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55F3F8">
+    <command xml:space="preserve">look at the mirror</command>
+    <result xml:space="preserve">Back in Texas, I was a freakin" nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm tall, and I can pull off some seriously sultry pouts if I do say so myself. But let's face it: the only reason the boys pay to see me is for the simple fact that I'm practically naked. It's a sad truth, but it's a truth that pays the bills.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55EB38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55EB38">
+    <command xml:space="preserve">look in the mirror</command>
+    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0D55ED68"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0D55ED68">
+    <command xml:space="preserve">rub pole</command>
+    <result xml:space="preserve">Look, there are things around here that are okay to rub, and things that aren't, alright?&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03112088">
+    <command xml:space="preserve">l clock</command>
+    <result xml:space="preserve">In giant red digital squarish numbers, the clock glows out 8:00 pm.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112478"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112478">
+    <command xml:space="preserve">l clock</command>
+    <result xml:space="preserve">In giant red digital squarish numbers, the clock glows out 8:01 pm.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03112948">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 0 out of a possible 1000, in 1 turn.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031126A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031126A8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03112B78">
+    <command xml:space="preserve">look at man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112398"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112398">
+    <command xml:space="preserve">look at meen</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112408"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112408">
+    <command xml:space="preserve">look at men</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112248"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112248">
+    <command xml:space="preserve">examine mn</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031129B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031129B8">
+    <command xml:space="preserve">examine man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03112C58">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  an ankle clip (being worn)&#x000A;  a pair of platform heels (being worn)&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03112018"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03112018">
+    <command xml:space="preserve">look at clip</command>
+    <result xml:space="preserve">You see nothing special about the ankle clip.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03116410">
+    <command xml:space="preserve">l everything</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115BC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115BC0">
+    <command xml:space="preserve">l stage</command>
+    <result xml:space="preserve">Which do you mean, the main stage or the stage lights?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115E60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115E60">
+    <command xml:space="preserve">l main stage</command>
+    <result xml:space="preserve">The stage rises a few feet above the club floor. It spans the entire back wall of The Rabbit's Tail. On one end is a short flight of stairs - without them, we'd never be able to climb up here in our giant platform heels.&#x000A;&#x000A;I grab the pole with one hand for support and undulate my body in long slow waves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031164F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031164F0">
+    <command xml:space="preserve">l lights</command>
+    <result xml:space="preserve">The stage lights are blinding. It isn't just to show off the girls, though - it's also to keep the girls from being able to see the customers. That's intentional. You ever heard the expression, "Dance like nobody's watching?" Well, when you're literally naked on stage... to be honest, yeah, I'll admit, it kinda helps.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I part my tits and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115F40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115F40">
+    <command xml:space="preserve">l rag</command>
+    <result xml:space="preserve">A dry denim rag for wiping down the stage between sets.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115FB0">
+    <command xml:space="preserve">l steps</command>
+    <result xml:space="preserve">A short flight of stairs leads down to the club's open floor.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;A figure below me stretches out an arm. With the stage lights in my eyes, all I can see is a silhouette attached to an offered dollar bill. It could be a customer, it could be one of the other girls, it could even be the manager. I don't care. I spread my lips and let them slide in the greenback, before transferring it down to my ankle clip with a coy murmur of, "Thank you, baby."&#x000A;&#x000A;[Your score has just gone up by one point.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03116480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03116480">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Floor&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031161E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031161E0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Floor&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03116560"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03116560">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I bounce my hips to the tune blasting from the speakers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03116250"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03116250">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Floor&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115D80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115D80">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Floor&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115D10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115D10">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Stage&#x000A;The stage of The Rabbit's Tail, for better or worse, affords the dancer a view of the entire club floor. That includes her own backside, what with the floor-to-ceiling mirrors squaring off in the corners. When she's grinding against that giant brass pole, the scene from below makes her look like a small army of synchronized sexlings, a kaleidoscope of tits and legs and lips of both kinds.&#x000A;&#x000A;At the moment, that dancer is me. As the ever-present speakers blast out their meaningless tunes, I shake and gyrate beneath the glare of the blinding stage lights. Whether the club is empty or packed, I know everyone's eyes are on me up here. I'd be lying if I said I didn't kinda love it.&#x000A;&#x000A;You can see a dry denim rag here.&#x000A;&#x000A;I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03115C30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03115C30">
+    <command xml:space="preserve">climb stairs</command>
+    <result xml:space="preserve">Little is to be achieved by that.&#x000A;&#x000A;I lie down on the stage, arch my back, and slowly run my hand down my body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x031162C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x031162C0">
+    <command xml:space="preserve">walk down stairs</command>
+    <result xml:space="preserve">I only understood you as far as wanting to walk down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
