@@ -1,0 +1,13 @@
+IFID: c335a5bf-9792-46bc-a312-8ff46b3b4088
+Name: The Rabbit's Tail
+Byline: by Evangeline
+HtmlByline: by <a href="mailto:your-email@host.com"> Your Name</a>
+AuthorEmail: Your Name <your-email@host.com>
+Desc: Put a brief "blurb" about your game here
+HtmlDesc: Put a brief "blurb" about your game here
+Version: 1
+ReleaseDate: 2016-03-03
+Language: en-US
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default
