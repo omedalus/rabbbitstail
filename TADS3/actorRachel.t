@@ -3,7 +3,7 @@
 #include <adv3.h>
 #include <en_us.h>
 
-actorRachel: Actor
+actorRachel: Stripper
     pcReferralPerson = FirstPerson
     location = roomStage
 ;
@@ -38,36 +38,4 @@ actorRachel: Actor
     }
 ;
 
-+ platformHeels : Wearable 
-    name = 'platform heels'
-    vocabWords = 'translucent white platform*platforms pair/heels shoes pumps'
-    isPlural = true
-    desc = "Six-inch translucent white platform heels. I'm a freaking 
-        giant in these idiotic things. Did I say idiotic? Sexy. I meant 
-        sexy. Seriously though, it took me weeks to stop wobbling on 
-        them. But they're totally worth it, just for what they do for 
-        my ass alone."
 
-    wornBy = actorRachel
-    
-    dobjFor(Doff) 
-    {
-        verify() {
-            illogical('Look, the platform heels add six freaking inches 
-                to my height. That\'s empowering as all hell, yo. If I was 
-                to pad around barefoot around here, I\'d just be a tiny, 
-                scared, unnoticeable little thing. And that\'s what real 
-                life is like. No thank you. In here, I can be something 
-                more. So unless there\'s a damn good reason otherwise,
-                the shoes stay on.');
-        }
-    }
-    
-    dobjFor(Smell) {
-        verify() {
-            illogical('I know there are some fetishists out there who
-                would get off on that kind of thing, but sniffing my
-                own feet in public is a line that even I won\'t cross.');
-        }
-    }
-;

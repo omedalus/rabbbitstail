@@ -63,13 +63,10 @@ modify Thing
         }
     }
 ;
-modify Wearable
-    dobjFor(Taste) {
-        verify() {
-            "In general, it's pretty safe to assume that anything I wear 
-            is completely tasteless.";
-        }
-    }
+
+
+modify Enterable
+    canBeNakedHere = nil
+    mustBeNakedHere = nil
+    mustDropEverythingOnArrival = nil
 ;
-
-

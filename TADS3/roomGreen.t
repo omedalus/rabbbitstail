@@ -19,12 +19,15 @@ roomGreen: Room
         so basically, like my grandmother. Graffiti adorns the walls, 
         traditionally a way for the dancers to leave messages for 
         one another. Costumes, both mine and everyone else's, hang
-        from a metal bar attached to the wall. There's a narrow window
+        from a clothes rack attached to the wall, in a small alcove. 
+        There's a narrow window
         at the top of one wall, just below the ceiling.<.p>
         The stage entrance, covered with a gaudy metallic curtain,
         is to the North. Access to the alley is out through the back door 
         to the South. The restroom is to the West. And to the 
         Northeast, the private rooms. <.p>"
+
+    canBeNakedHere = true
     
     north = metallicCurtainGreen
     northeast = doorFromGreenRoomToPrivate
@@ -132,37 +135,56 @@ roomGreen: Room
     }    
 ;
 
-+ metalClothingBar : Fixture
-    name = 'metal bar rod pole'
-    vocabWords = 'metal clothing*clothes hanging closet bar alcove nook cranny'
-    desc = "It's a narrow steel bar about four feet long, 
++ costumerack : Fixture
+    name = 'clothes rack'
+    vocabWords = 'metal hanging costume coat clothes clothing*clothes/closet/bar/alcove/' + 
+        'nook/cranny/bar/rod/pole/clothes/rack/clothesrack/coatrack/coat/costumes/outfits'
+    desc() {
+        "The clothes rack is a narrow steel bar about four feet long, 
         jammed into makeshift holes bored into the walls of a 
-        small alcove. There are several wire hangers dangling 
-        from it."
+        small alcove. It's packed with all of our sordid
+        outfits and costumes, dangling from cheap wire hangers.<.p>";
+    }
+    
+    descContentsLister: thingDescContentsLister
+    {
+        showListPrefixWide(itemCount, pov, parent)
+        {
+            "I have ";
+            if (itemCount == 0) {
+                "none of my costumes ";
+            }
+            if (itemCount == 1) {
+                "a costume ";
+            }
+            else
+            {
+                "<<itemCount>> costumes ";
+            }
+            "hanging here: ";
+        }
+
+        showListSuffixWide(itemCount, pov, parent)
+        {
+            if (itemCount != 0) {
+                ". Yeah, I know. Not much imagination went into putting 
+                <<itemCount == 1 ? 'this' : 'these'>> 
+                together. But, you know what? Nine times out of seven, 
+                that's what the customers ask for, and I 
+                aim to please. Hey, I'm a giver, what can I say? ";
+            }
+            "<.p>";
+        }
+    }
 ;
 
 + clotheshangers : Fixture
     name = 'hangers'
     isPlural = true
-    vocabWords = 'wire clotheshanger*clotheshangers hanger*hangers coathanger*coathangers'
+    vocabWords = 'wire clotheshanger*clotheshangers hanger*hangers 
+        coathanger*coathangers'
     desc = "These are the kind that clothes are hung on when they 
-        come back from the dry cleaners. At present, they hold my 
-        two costumes."
-;
-
-+ costumes : Fixture
-    name = 'costumes'
-    isPlural = true
-    vocabWords = 'costume*costumes outfit*outfits'
-    desc = "One is a naughty schoolgirl costume, complete with very 
-        short plaid skirt, white knee socks, 6­inch platform Mary Janes, 
-        and barely­there little black sweater. The other is a 
-        faux­dominatrix getup – black rubber hotpants, black 
-        leather corset, and 6­inch platform thigh­high black boots. 
-        Yeah, I know. Not much imagination went into putting these 
-        together. But, you know what? Nine times out of seven, 
-        these are the two outfits the customers ask for, and I 
-        aim to please. Hey, I'm a giver, what can I say?"
+        come back from the dry cleaners."
 ;
 
 + lockers : Fixture

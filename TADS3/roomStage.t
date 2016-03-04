@@ -14,7 +14,7 @@ roomStage: Room
         from below makes her look like a small army of synchronized sexlings, 
         a kaleidoscope of tits and legs and lips of both kinds.<.p>";
         
-        if (actorRachel.isIn(self)) {
+        if (actorRachel.isIn(self) && actorRachel.isNaked()) {
             "At the moment, that dancer is me. As the ever-present 
             speakers blast out 
             their meaningless tunes, I shake and gyrate beneath the glare of the 
@@ -37,21 +37,34 @@ roomStage: Room
             'I sit down on the stage, prop myself on my elbows, stretch my legs up, and scissor them open and closed. '
         ]
         
+        seenOnce = nil
+        
         doScript() {
             inherited;
             
             if (rand(3) == 0) {
-                "<.p>A figure below me stretches out an arm. With the stage lights in my eyes, 
-                all I can see is a silhouette attached to an offered dollar bill. It could 
-                be a customer, it could be one of the other girls, it could even be the 
-                manager. I don't care. I <<one of>>open my mouth<<or>>squeeze my tits together<<or>>
+                "<.p>A figure below me stretches out an arm. ";
+                
+                if (!seenOnce) {
+                    "With the stage lights in my eyes, 
+                    all I can see is a silhouette attached to an offered dollar bill. It could 
+                    be a customer, it could be one of the other girls, it could even be the 
+                    manager. I don't care. ";
+                    seenOnce = true;
+                }
+                
+                "I <<one of>>open my mouth<<or>>squeeze my tits together<<or>>
                 spread my ass cheeks<<at random>> and let them slide in the greenback, 
                 before transferring it down to my ankle clip with a coy murmur of, 
                 \"Thank you, baby.\"";
+                
                 libScore.totalScore += 1;
             }
         }
     }
+ 
+    canBeNakedHere = true
+    mustBeNakedHere = true
     
     south = metallicCurtain
     north = stairsDownToFloor
@@ -60,14 +73,14 @@ roomStage: Room
 
 + metallicCurtain: ThroughPassage, Enterable
     name = 'gaudy metallic curtain' 
-    vocabWords = 'gaudy metallic curtain*curtains/dressing/locker/green room'
+    vocabWords = 'gaudy metallic dressing locker green curtain*curtains/locker/room'
     desc = "Behind me, a gaudy metallic curtain separates the club's stage 
         from the dressing room."
 ;
 
 + stairsDownToFloor: StairwayDown, Enterable
     name = 'stairs down to the main floor' 
-    vocabWords = 'stairs steps stairway flight main floor hall'
+    vocabWords = 'flight stairs/steps/stairway/main/floor/hall'
     desc = "A short flight of steps leads down to the main hall of the club."
     
     dobjFor(Take) remapTo(Enter, self)
@@ -76,27 +89,38 @@ roomStage: Room
 
 + stageLights : Distant
     name = 'stage lights'
-    vocabWords = 'lights floor ceiling audience club hall room patron*patrons 
-        man*men customer*customers client*clients john*johns'
+    vocabWords = 'stage lights/ceiling/'        
     desc() {
         "I can't see much past the stage lights. They're blinding &mdash; on purpose.
         They're not just there to show off the girls. They're also for keeping the 
         girls from being able to see the customers. You ever heard the expression, 
         \"Dance like nobody's watching?\" Well, when you're literally naked 
-        in front of gross strangers... to be honest, yeah, it kinda helps.";
+        in front of gross strangers... to be honest, yeah, it kinda helps. ";
     }
+;
+
++ mainFloorFromPovOfStage : Distant
+    name = 'main club/hall/room/floor'
+    vocabWords = 'patron*patrons/man*men/customer*customers/client*clients/john*johns'
+    dobjFor(Examine) remapTo(Examine, stageLights)
+;
+
++ audience : Distant
+    name = 'audience'
+    vocabWords = 'audience/patron*patrons/man*men/customer*customers/client*clients/john*johns'
+    dobjFor(Examine) remapTo(Examine, stageLights)
 ;
  
 + stagePlatform : Floor
     name = 'stage'
-    vocabWords = 'stage'
+    vocabWords = 'stage/platform'
     desc = "The stage rises a few feet above the club floor. It spans most of the 
         south wall of The Rabbit's Tail."
 ;
 
 + stageMirror : DefaultWall
     name = 'mirror'
-    vocabWords = 'mirror*mirrors wall corner'
+    vocabWords = 'wall corner mirror*mirrors/wall/corner'
     desc = "I give myself a once-over in the mirror. Back in Texas, I was a freakin' 
         nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm blonde, 
         and I can pull off some seriously sultry pouts if I do say so myself. But 
@@ -107,13 +131,3 @@ roomStage: Room
     dobjFor(LookIn) remapTo(Examine, self)
 ;
     
-+ costumeLittleBlackDress : Wearable
-    name = 'little black dress'
-    vocabWords = 'little black dress'
-    desc = "My sexy, classy little black dress, the kind I might wear to a cocktail party.
-        It's not really even proper stripper attire, but that's exactly why some men
-        like it."
-    initSpecialDesc = "My sexy little black cocktail dress lies on the stage,
-        near the metallic curtain. It would be a classy little piece if it wasn't
-        currently rumpled in a heap. Maybe I shouldn't read too much into that."
-;

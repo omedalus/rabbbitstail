@@ -30,6 +30,7 @@
 -source roomBackAlley
 -source roomStreet
 -source roomBathroom
+-source clothing
 
 -res
 GameInfo.txt
