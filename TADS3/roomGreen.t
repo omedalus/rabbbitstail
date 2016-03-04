@@ -52,7 +52,7 @@ roomGreen: Room
 
 + doorFromGreenRoomToPrivate: AutoClosingDoor, Enterable
     name = 'door to the private rooms' 
-    vocabWords = 'private rooms'
+    vocabWords = 'private vip dance room*rooms/lounge'
     desc = "A plain brown door leads to the private rooms."
 ;
 
@@ -61,6 +61,13 @@ roomGreen: Room
     vocabWords = 'alley outside back door backdoor rear reardoor'
     desc = "A heavy door opens outward to the grimy alley behind the club."
 ;
+
++ doorFromGreenRoomToWomensRestroom: AutoClosingDoor, Enterable
+    name = 'door to the ladies\' room' 
+    vocabWords = 'ladies ladies\' womens women\'s bathroom/restroom/toilet/loo/head'
+    desc = "The door has a plaque saying \"LADIES\". Someone wrote below it, \"None here!\""
+;
+
 
 
 + metalChair : Chair

@@ -37,3 +37,9 @@ roomMainHall: Room
     
     dobjFor(Take) remapTo(Enter, self)    
 ;
+
++ doorFromMainToPrivate: AutoClosingDoor, Enterable
+    name = 'door to the private rooms' 
+    vocabWords = 'door to the private vip dance room*rooms/lounge*lounges'
+    desc = "A thick sound-muffled door leads to the private rooms."
+;

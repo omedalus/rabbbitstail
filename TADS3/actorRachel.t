@@ -31,7 +31,7 @@ actorRachel: Stripper
     dobjFor(Doff) 
     {
         verify() {
-            illogical('No way, Jose. That ankle clip holds all my money 
+            failCheck('No way, Jose. That ankle clip holds all my money 
                 right where I can see it &mdash; and that dough is the 
                 whole reason I\'m here tonight. Or, you know, ever. ');
         }

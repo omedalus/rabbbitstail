@@ -7,24 +7,13 @@ roomStage: Room
     roomName = 'Stage'
     destName = 'the stage'
     desc() {
-        "The stage of The Rabbit's Tail, for better or worse, affords 
-        the dancer a view of the entire club floor. That includes her own 
-        backside, what with the floor-to-ceiling mirrors squaring off in the 
-        corner. When she's grinding against that giant brass pole, the scene 
-        from below makes her look like a small army of synchronized sexlings, 
-        a kaleidoscope of tits and legs and lips of both kinds.<.p>";
-        
-        if (actorRachel.isIn(self) && actorRachel.isNaked()) {
-            "At the moment, that dancer is me. As the ever-present 
-            speakers blast out 
-            their meaningless tunes, I shake and gyrate beneath the glare of the 
-            blinding stage lights. Whether the club is empty or packed, I know 
-            everyone's eyes are on me up here. I'd be lying if I said I didn't 
-            kinda love it.<.p>";
-        }
-
-        "Below me is the club floor, down a short series of steps to the north. Behind me is 
-        a gaudy metallic curtain that covers the doorway to the dressing room.";
+        "This is where the magic happens &mdash; if, by magic, you mean girls 
+        taking off their clothes and shaking what their mamas and plastic 
+        surgeons gave them. The stage is illuminated by a row of red, 
+        green and blue lights hung from the ceiling. Mirrors lines the 
+        South and East walls. The centerpiece is a thick metal pole that 
+        runs from the floor to the ceiling. There is a small set of stairs 
+        going down to the main floor on the North edge of the stage.<.p>";
     }
     
     atmosphereList: ShuffledEventList
@@ -38,27 +27,39 @@ roomStage: Room
         ]
         
         seenOnce = nil
-        
-        doScript() {
-            inherited;
-            
-            if (rand(3) == 0) {
-                "<.p>A figure below me stretches out an arm. ";
+
+        doScript() {            
+            if (actorRachel.isNaked())
+            {
+                inherited();
                 
-                if (!seenOnce) {
-                    "With the stage lights in my eyes, 
-                    all I can see is a silhouette attached to an offered dollar bill. It could 
-                    be a customer, it could be one of the other girls, it could even be the 
-                    manager. I don't care. ";
-                    seenOnce = true;
+                if (rand(3) == 0) {
+                    "<.p>A figure below me stretches out an arm. ";
+                    
+                    if (!seenOnce) {
+                        "With the stage lights in my eyes, 
+                        all I can see is a silhouette attached to an offered dollar bill. It could 
+                        be a customer, it could be one of the other girls, it could even be the 
+                        manager. I don't care. ";
+                        seenOnce = true;
+                    }
+                    
+                    "I <<one of>>open my mouth<<or>>squeeze my tits together<<or>>
+                    spread my ass cheeks<<at random>> and let them slide in the greenback, 
+                    before transferring it down to my ankle clip with a coy murmur of, 
+                    \"Thank you, baby.\"";
+                    
+                    libScore.totalScore += 1;
                 }
-                
-                "I <<one of>>open my mouth<<or>>squeeze my tits together<<or>>
-                spread my ass cheeks<<at random>> and let them slide in the greenback, 
-                before transferring it down to my ankle clip with a coy murmur of, 
-                \"Thank you, baby.\"";
-                
-                libScore.totalScore += 1;
+            }
+            else
+            {
+                "A voice from somewhere below yells, <<one of>>
+                \"Take it off!\"<<or>>
+                \"Get naked!\"<<or>>
+                \"Show us your tits!\"<<or>>
+                \"Let's see what your mama gave ya!\"<<at random>>
+                ";
             }
         }
     }
@@ -91,11 +92,9 @@ roomStage: Room
     name = 'stage lights'
     vocabWords = 'stage lights/ceiling/'        
     desc() {
-        "I can't see much past the stage lights. They're blinding &mdash; on purpose.
-        They're not just there to show off the girls. They're also for keeping the 
-        girls from being able to see the customers. You ever heard the expression, 
-        \"Dance like nobody's watching?\" Well, when you're literally naked 
-        in front of gross strangers... to be honest, yeah, it kinda helps. ";
+        "Standard red, blue and green stage lights hung from the ceiling. 
+        They serve the double purpose of illuminating the dancers for the 
+        audience and obscuring the audience from the dancers.";
     }
 ;
 
@@ -118,16 +117,39 @@ roomStage: Room
         south wall of The Rabbit's Tail."
 ;
 
++ stagePole : Fixture
+    name = 'pole'
+    vocabWords = 'pole'
+    desc = "A thick metal pole runs from the floor to the ceiling. I use 
+        it a lot when I dance. The customers love it when I wrap my legs 
+        around its shiny length and hang upside down, letting my tits 
+        bounce in their faces. I think they appreciate the strength and 
+        control it requires to pull off this acrobatic move. Just kidding. 
+        They're looking at the pole but seeing their own huge cocks in its 
+        stead, gripped between my legs. And they all have huge cocks, right? 
+        Yeah. Anyway, the pole is supposed to be wiped down by each dancer 
+        after she finishes her set. That doesn't always happen..."
+;
+
+
 + stageMirror : DefaultWall
     name = 'mirror'
     vocabWords = 'wall corner mirror*mirrors/wall/corner'
-    desc = "I give myself a once-over in the mirror. Back in Texas, I was a freakin' 
-        nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm blonde, 
-        and I can pull off some seriously sultry pouts if I do say so myself. But 
-        let's face it: the only reason the boys pay to see me is for the simple 
-        fact that I'm practically naked. It's a sad truth, but it's a truth that 
-        pays the bills."
+    desc = "Lining the two walls that abut the stage, the mirrors 
+        allow the customers to have a front and rear view of all 
+        the action on the stage. I like to look at myself in them 
+        when I dance - I get off on seeing the contortions of my 
+        own body reflected back at me."
     
-    dobjFor(LookIn) remapTo(Examine, self)
+    dobjFor(LookIn) {
+        action() {
+            "I give myself a once-over in the mirror. Back in Texas, I was a freakin' 
+            nine. Out here in L.A., I'm, like, a five at best. I'm fit, and I'm blonde, 
+            and I can pull off some seriously sultry pouts if I do say so myself. But 
+            let's face it: the only reason the boys pay to see me is for the simple 
+            fact that I'm practically naked. It's a sad truth, but it's a truth that 
+            pays the bills.";
+        }
+    }
 ;
     

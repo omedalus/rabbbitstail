@@ -2,10 +2,11 @@
 # TADS Workbench configuration settings
 
 DebugToolbar:rebarWidth:I:-1
-line wrap:roomBackAlley.t:S:0:s
+line wrap:roomBackAlley.t:S:0:N
 src win edit mode:actorRachel.t:S:0:TADS 3
 build:ext resfile cnt:I:0
 src win split:roomGreen.t:S:0:0.000000
+src win edit mode:stripperClass.t:S:0:TADS 3
 build:defaults set:I:1
 src win split:roomStage.t:S:0:0.000000
 watch win:pos:R:312,744,596,860
@@ -17,11 +18,11 @@ src win pos:versionInfo.t:R:208,195,1059,810
 build:c ops:I:0
 line wrap:roomMain.t:S:0:N
 src win selrange:roomPrivateFoyer.t:S:0:0,0
-src win selrange:roomPrivateFoyer.t:S:1:419,0
+src win selrange:roomPrivateFoyer.t:S:1:685,706
 SearchToolbar:rebarNewLine:I:0
-src win pos:roomPrivateFoyer.t:R:0,96,851,591
-log win vis::I:1
-log win pos::R:1295,705,2004,1237
+src win pos:roomPrivateFoyer.t:R:273,177,1124,672
+log win vis::I:0
+log win pos::R:1244,234,1953,766
 MenuBar:rebarVis:I:1
 DocToolbar:rebarIndex:I:3
 build:include_files-sys:S:0:system
@@ -51,10 +52,11 @@ src win edit mode:versionInfo.t:S:0:TADS 3
 src win selrange:roomGreen.t:S:0:0,0
 src win selrange:roomGreen.t:S:1:5132,5132
 DebugToolbar:rebarVis:I:1
-src win pos:roomGreen.t:R:548,240,1534,912
+src win pos:roomGreen.t:R:200,366,1186,1011
 src win selrange:roomStage.t:S:0:0,0
-src win selrange:roomStage.t:S:1:2173,2173
-src win pos:roomStage.t:R:121,282,939,872
+src win selrange:roomStage.t:S:1:1267,1267
+src win pos:roomStage.t:R:365,362,1350,952
+line wrap:clothing.t:S:0:N
 src win split:Untitled1:S:0:0.000000
 line wrap:%tads%lib\adv3\exits.t:S:0:N
 src win edit mode:roomPrivateFoyer.t:S:0:TADS 3
@@ -68,13 +70,14 @@ build:installer options:S:1:savext=rt3
 search:start at top:I:0
 line wrap:actorRachel.t:S:0:N
 src win edit mode:roomGreen.t:S:0:TADS 3
+line wrap:stripperClass.t:S:0:N
 src win edit mode:roomStage.t:S:0:TADS 3
 EditToolbar:rebarNewLine:I:1
 src win split:roomBathroom.t:S:0:0.000000
 src win selrange:Untitled1:S:0:0,0
 src win selrange:Untitled1:S:1:0,0
 proj search:exact case:I:0
-src win pos:Untitled1:R:344,142,1195,637
+src win pos:Untitled1:R:569,477,1420,972
 src win pos:Untitled2:R:199,140,1050,755
 src win pos:Untitled3:R:0,0,733,431
 src win pos:Untitled4:R:26,26,759,457
@@ -97,27 +100,26 @@ docking config::S:3:CB
 docking config::S:4:W3,270,170,304,718,604,868,D,B,watch win
 docking config::S:5:W3,270,170,2,718,302,868,D,B,locals win
 docking config::S:6:W-1,170,170,26,77,877,692,M,R,stack win
-docking config::S:7:W-1,170,170,766,504,1491,1074,M,R,log win
+docking config::S:7:W-1,170,170,715,33,1440,603,M,R,log win
 src win split:rt3.t:S:0:0.000000
 locals win:pos:R:10,744,294,860
 locals win:vis:I:0
 main win max::I:0
 line wrap:roomPrivateFoyer.t:S:0:N
 src win selrange:roomBathroom.t:S:0:0,0
-src win selrange:roomBathroom.t:S:1:284,284
+src win selrange:roomBathroom.t:S:1:380,505
 src win pos:roomBathroom.t:R:156,156,872,587
 proj search:collapse spaces:I:0
 search:exact case:I:0
 src win split:roomBackAlley.t:S:0:0.000000
-mdi win list::S:0::log
-mdi win list::S:1:clothing.t
-mdi win list::S:2:roomGreen.t
-mdi win list::S:3:actorRachel.t
-mdi win list::S:4:rt3.t
-mdi win list::S:5:roomStage.t
-mdi win list::S:6:roomMain.t
+mdi win list::S:0:clothing.t
+mdi win list::S:1:roomMain.t
+mdi win list::S:2:roomPrivateFoyer.t
+mdi win list::S:3:roomBathroom.t
+mdi win list::S:4:roomStage.t
+mdi win list::S:5:stripperClass.t
+mdi win list::S:6:roomGreen.t
 mdi win list::S:7:roomBackAlley.t
-mdi win list::S:8:roomPrivateFoyer.t
 build:webpage dir:S:0:web
 main win pos::R:90,60,2113,1307
 build:srczipfile:S:0:rt3Source.zip
@@ -136,7 +138,7 @@ src win edit mode:roomBathroom.t:S:0:TADS 3
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
 src win selrange:rt3.t:S:0:0,0
-src win selrange:rt3.t:S:1:1679,1679
+src win selrange:rt3.t:S:1:2490,2490
 src win pos:rt3.t:R:53,212,904,674
 EditToolbar:rebarWidth:I:2039
 src win split:roomMain.t:S:0:0.000000
@@ -177,6 +179,7 @@ search dlg:old searches:S:0:table
 search dlg:old searches:S:1:tabl
 search dlg:old searches:S:2:graffiti
 search dlg:old searches:S:3:
+src win split:clothing.t:S:0:0.000000
 src win edit mode:rt3.t:S:0:TADS 3
 line wrap:Untitled1:S:0:
 src win selrange:roomStreet.t:S:0:0,0
@@ -190,17 +193,20 @@ search dlg:old search opts:S:1:
 search dlg:old search opts:S:2:
 search dlg:old search opts:S:3:
 src win selrange:roomMain.t:S:0:0,0
-src win selrange:roomMain.t:S:1:1044,1044
-src win pos:roomMain.t:R:669,284,1543,1028
+src win selrange:roomMain.t:S:1:290,290
+src win pos:roomMain.t:R:636,237,1510,1061
 src win split:actorRachel.t:S:0:0.000000
 search:regex:I:0
-mdi tab order::S:0:2,3,5,8,6,4,7,1,0
+mdi tab order::S:0:6,4,1,7,0,3,2,5
+src win split:stripperClass.t:S:0:0.000000
 build:rlsgam:S:0:rt3.t3
 src win edit mode:roomStreet.t:S:0:TADS 3
 EditToolbar:rebarVis:I:1
 main win mdi max::I:0
 auto-script:default quit sequences set:I:1
-line wrap:roomBathroom.t:S:0:a
+line wrap:roomBathroom.t:S:0:N
+src win selrange:clothing.t:S:0:0,0
+src win selrange:clothing.t:S:1:139,139
 src win pos:clothing.t:R:344,142,1195,637
 src win edit mode:roomMain.t:S:0:TADS 3
 src win selrange:%tads%lib\adv3\exits.t:S:0:0,0
@@ -208,25 +214,28 @@ src win selrange:%tads%lib\adv3\exits.t:S:1:8361,8361
 src win pos:%tads%lib\adv3\exits.t:R:0,0,794,322
 DocToolbar:rebarNewLine:I:0
 MenuBar:rebarIndex:I:0
-mdi win title::S:0:
-mdi win title::S:1:clothing.t
-mdi win title::S:2:roomGreen.t
-mdi win title::S:3:actorRachel.t
-mdi win title::S:4:rt3.t
-mdi win title::S:5:roomStage.t
-mdi win title::S:6:roomMain.t
+mdi win title::S:0:clothing.t
+mdi win title::S:1:roomMain.t
+mdi win title::S:2:roomPrivateFoyer.t
+mdi win title::S:3:roomBathroom.t
+mdi win title::S:4:roomStage.t
+mdi win title::S:5:stripperClass.t
+mdi win title::S:6:roomGreen.t
 mdi win title::S:7:roomBackAlley.t
-mdi win title::S:8:roomPrivateFoyer.t
 src win selrange:actorRachel.t:S:0:0,0
-src win selrange:actorRachel.t:S:1:2251,2251
-src win pos:actorRachel.t:R:433,248,1264,971
+src win selrange:actorRachel.t:S:1:147,147
+src win pos:actorRachel.t:R:559,66,1390,789
 search:dir:I:1
 src win split:versionInfo.t:S:0:0.000000
 MenuBar:rebarWidth:I:-1
 build:installer prog:S:0:rt3_Setup.exe
 project win:pos:R:100,188,512,1118
 project win:vis:I:1
+src win selrange:stripperClass.t:S:0:0,0
+src win selrange:stripperClass.t:S:1:147,147
+src win pos:stripperClass.t:R:569,477,1420,972
 auto-script:dir:S:0:Scripts
+src win edit mode:clothing.t:S:0:TADS 3
 stack win pos::R:555,278,1390,855
 filesearch win vis::I:0
 stack win vis::I:0

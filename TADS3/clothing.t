@@ -3,7 +3,9 @@
 #include <adv3.h>
 #include <en_us.h>
 
-class Outfit : Wearable    
+class Outfit : Wearable
+    vocabWords = "clothes/clothing/outfit/costume"
+    
     dobjFor(Take) {
         action()
         {
@@ -38,6 +40,14 @@ class Outfit : Wearable
         }
     }
     
+    dobjFor(Drop) {
+        action()
+        {
+            inherited();
+            actorRachel.currentOutfitCarried = nil;
+        }
+    }    
+    
     dobjFor(Doff) {
         check() 
         {
@@ -53,32 +63,9 @@ class Outfit : Wearable
         {
             inherited();
             if (actorRachel.location != nil && actorRachel.location.mustBeNakedHere) {
-                failCheck('Look where I am. The <<actorRachel.location.name>>. Here, 
+                failCheck('Can\'t do that. Look where I am. The <<actorRachel.location.name>>. Here, 
                     once I get naked, I gotta <em>stay</em> naked. ');
             }
-        }
-    }
-;
-
-class Shoes : Wearable
-    dobjFor(Doff) 
-    {
-        verify() {
-            failCheck('Look, these things add six freaking inches 
-                to my height. That\'s empowering as all hell, yo. If I was 
-                to pad around barefoot around here, I\'d just be a tiny, 
-                scared, unnoticeable little thing. And that\'s what real 
-                life is like. No thank you. In here, I can be something 
-                more. So unless there\'s a damn good reason otherwise,
-                the shoes stay on.');
-        }
-    }
-    
-    dobjFor(Smell) {
-        verify() {
-            failCheck('I know there are some fetishists out there who
-                would get off on that kind of thing, but sniffing my
-                own feet in public is a line that even I won\'t cross.');
         }
     }
 ;
@@ -92,23 +79,12 @@ modify Wearable
     }
 ;
 
-platformHeels : Shoes
-    name = 'platform heels'
-    vocabWords = 'translucent white platform*platforms pair/heels shoes pumps'
-    isPlural = true
-    desc = "Six-inch translucent white platform heels. I'm a freaking 
-        giant in these idiotic things. Did I say idiotic? Sexy. I meant 
-        sexy. Seriously though, it took me weeks to stop wobbling on 
-        them. But they're totally worth it, just for what they do for 
-        my ass alone."
-
-    wornBy = actorRachel
-;
 
 costumeLittleBlackDress : Outfit
     name = 'little black dress'
     vocabWords = 'little black dress costume outfit'
-    desc = "My sexy, classy little black dress, the kind I might wear to a cocktail party.
+    desc = "My sexy, classy little black dress, the kind I might wear to a cocktail party,
+        with matching stilletto heels.
         It's not really even proper stripper attire, but that's exactly why some men
         like it."
     initSpecialDesc = "My sexy little black cocktail dress lies on the stage,
@@ -122,7 +98,8 @@ costumeSchoolgirl : Outfit
     name = 'naughty catholic schoolgirl outfit'
     vocabWords = 'naughty catholic schoolgirl school student costume outfit'
     desc = "A naughty Catholic schoolgirl costume, complete with very 
-        short plaid skirt, white knee socks, and barely-there little black sweater."
+        short plaid skirt, white knee socks, 6-inch Baby Jane platform pumps, 
+        and barely-there little black sweater."
     
     location = costumerack
 ;

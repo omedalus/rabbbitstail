@@ -9,46 +9,52 @@ roomPrivateFoyer: Room
     desc = "A dark, narrow hallway leading to the private dance rooms."
     destName = 'private rooms'
     
-    southwest = roomGreen
-    west = roomMainHall
+    canBeNakedHere = true
+    
+    southwest = doorFromPrivateToGreenRoom
+    northwest = roomMainHall
     northeast = roomPrivate1
     east = roomPrivate2
     southeast = roomPrivate3
 ;
 
-+ doorToGreenRoom: AutoClosingDoor, Enterable
++ doorFromPrivateToMain: AutoClosingDoor, Enterable
+    name = 'door to the main hall' 
+    vocabWords = 'door to the main hall/floor/area'
+    desc = "A thick sound-muffled door leads to the main hall."
+    masterObject = doorFromMainToPrivate
+;
+
++ doorFromPrivateToGreenRoom: AutoClosingDoor, Enterable
     name = 'door to the dressing room' 
-    vocabWords = 'dressing room'
+    vocabWords = 'door to the dressing locker green room/dressingroom/lockerroom/greenroom'
     desc = "A plain brown door leads to the dressing room."
     masterObject = doorFromGreenRoomToPrivate
 ;
 
 
-roomPrivate1: Room
+class PrivateRoom : Room
     name = 'Private Room'
+    destName = 'private room'
     vocabWords = 'private room'
     desc = "A nearly pitch-black room with nothing but a deep black leather loveseat."
+
+    canBeNakedHere = true
+    mustBeNakedHere = true
     
-    southwest = roomPrivateFoyer
     out = roomPrivateFoyer
 ;
 
-roomPrivate2: Room
-    name = 'Private Room'
-    vocabWords = 'private room'
-    desc = "A nearly pitch-black room with nothing but a deep black leather loveseat."
-    
+roomPrivate1: PrivateRoom
+    southwest = roomPrivateFoyer
+;
+
+roomPrivate2: PrivateRoom
     west = roomPrivateFoyer
-    out = roomPrivateFoyer
 ;
 
 roomPrivate3: Room
-    name = 'Private Room'
-    vocabWords = 'private room'
-    desc = "A nearly pitch-black room with nothing but a deep black leather loveseat."
-    
     northwest = roomPrivateFoyer
-    out = roomPrivateFoyer
 ;
 
 

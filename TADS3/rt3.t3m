@@ -31,6 +31,7 @@
 -source roomStreet
 -source roomBathroom
 -source clothing
+-source stripperClass
 
 -res
 GameInfo.txt
