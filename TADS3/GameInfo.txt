@@ -6,7 +6,7 @@ AuthorEmail: Your Name <your-email@host.com>
 Desc: Put a brief "blurb" about your game here
 HtmlDesc: Put a brief "blurb" about your game here
 Version: 1
-ReleaseDate: 2016-03-03
+ReleaseDate: 2016-03-04
 Language: en-US
 LicenseType: Freeware
 CopyingRules: Nominal cost only; compilations allowed

@@ -24,6 +24,12 @@
 -source versionInfo
 -source roomStage
 -source actorRachel
+-source roomGreen
+-source roomPrivateFoyer
+-source roomMain
+-source roomBackAlley
+-source roomStreet
+-source roomBathroom
 
 -res
 GameInfo.txt
