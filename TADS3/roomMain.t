@@ -19,10 +19,21 @@ roomMainHall: Room
         "The front door of the club is to the North, the stage 
         to the South. Along the West wall are the beverage bar,
         the DJ booth, and the restrooms. To the East is the 
-        coat check room and, most importantly, the private rooms.";
+        coat check room, the manager's office, and
+        most importantly, the private rooms.";
     }
 
-    up = roomStage
+    south = stairsUpToFloor
+    up asExit(south)
     east = roomPrivateFoyer
-    south = roomWomensRestroom
+    southwest = roomWomensRestroom
+;
+
++ stairsUpToFloor: StairwayUp, Enterable
+    name = 'stairs up to the stage' 
+    vocabWords = 'stairs steps stairway flight stage'
+    desc = "A short flight of steps leads up to the stage."
+    masterObject = stairsDownToFloor
+    
+    dobjFor(Take) remapTo(Enter, self)    
 ;

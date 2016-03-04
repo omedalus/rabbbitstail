@@ -40,8 +40,36 @@ gameMain: GameMainDef
     }
     
     maxScore = 1000
-    
 ;
 
+modify Thing
+    dobjFor(Smell) {
+        verify() {
+            if (actorRachel.isIn(roomGreen)) {
+                "All I can smell in here is an unholy mixture of a thousand 
+                candy floral fragrances.";
+            }
+            else
+            {
+                illogical('Ew, gross! I\'m not sniffing that!');
+            }
+        }
+    }
+    
+    dobjFor(Taste) {
+        verify() {
+            illogical('I\'m not categorically opposed to putting my tongue on things, 
+                but in this particular case I\'m going to have to say no.');
+        }
+    }
+;
+modify Wearable
+    dobjFor(Taste) {
+        verify() {
+            "In general, it's pretty safe to assume that anything I wear 
+            is completely tasteless.";
+        }
+    }
+;
 
 

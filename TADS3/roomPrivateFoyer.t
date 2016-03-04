@@ -16,6 +16,14 @@ roomPrivateFoyer: Room
     southeast = roomPrivate3
 ;
 
++ doorToGreenRoom: AutoClosingDoor, Enterable
+    name = 'door to the dressing room' 
+    vocabWords = 'dressing room'
+    desc = "A plain brown door leads to the dressing room."
+    masterObject = doorFromGreenRoomToPrivate
+;
+
+
 roomPrivate1: Room
     name = 'Private Room'
     vocabWords = 'private room'

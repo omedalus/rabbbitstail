@@ -5,6 +5,7 @@
 
 roomStage: Room
     roomName = 'Stage'
+    destName = 'the stage'
     desc() {
         "The stage of The Rabbit's Tail, for better or worse, affords 
         the dancer a view of the entire club floor. That includes her own 
@@ -22,8 +23,8 @@ roomStage: Room
             kinda love it.<.p>";
         }
 
-        "Below me is the club floor. Behind me is a gaudy metallic curtain that
-        covers the doorway to the Green Room.";
+        "Below me is the club floor, down a short series of steps to the north. Behind me is 
+        a gaudy metallic curtain that covers the doorway to the dressing room.";
     }
     
     atmosphereList: ShuffledEventList
@@ -53,14 +54,25 @@ roomStage: Room
     }
     
     south = metallicCurtain
+    north = stairsDownToFloor
+    down asExit(north)
 ;
 
-+ metallicCurtain: ThroughPassage 
++ metallicCurtain: ThroughPassage, Enterable
     name = 'gaudy metallic curtain' 
-    vocabWords = 'gaudy metallic curtain*curtains doorway door'
-    desc = "A gaudy metallic curtain separates the club's stage from the Green Room,
-        where the girls prep and dress. Or rather, <i>un</i>dress."
+    vocabWords = 'gaudy metallic curtain*curtains/dressing/locker/green room'
+    desc = "Behind me, a gaudy metallic curtain separates the club's stage 
+        from the dressing room."
 ;
+
++ stairsDownToFloor: StairwayDown, Enterable
+    name = 'stairs down to the main floor' 
+    vocabWords = 'stairs steps stairway flight main floor hall'
+    desc = "A short flight of steps leads down to the main hall of the club."
+    
+    dobjFor(Take) remapTo(Enter, self)
+;
+
 
 + stageLights : Distant
     name = 'stage lights'
@@ -82,7 +94,7 @@ roomStage: Room
         south wall of The Rabbit's Tail."
 ;
 
-+ stageMirror : RoomPart
++ stageMirror : DefaultWall
     name = 'mirror'
     vocabWords = 'mirror*mirrors wall corner'
     desc = "I give myself a once-over in the mirror. Back in Texas, I was a freakin' 
@@ -91,6 +103,8 @@ roomStage: Room
         let's face it: the only reason the boys pay to see me is for the simple 
         fact that I'm practically naked. It's a sad truth, but it's a truth that 
         pays the bills."
+    
+    dobjFor(LookIn) remapTo(Examine, self)
 ;
     
 + costumeLittleBlackDress : Wearable

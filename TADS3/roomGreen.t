@@ -4,8 +4,9 @@
 #include <en_us.h>
 
 roomGreen: Room
-    name = 'Green Room'
-    vocabWords = 'room'
+    name = 'Dressing Room'
+    vocabWords = 'green dressing room'
+    destName = 'the dressing room'
     desc = "The dressing area for the dancers and waitresses. It's a small, seedy-looking room. 
         No one has made any effort to make it comfortable or inviting. It's
         just a place to change costumes or take a quick breather from 
@@ -26,18 +27,38 @@ roomGreen: Room
         Northeast, the private rooms. <.p>"
     
     north = metallicCurtainGreen
-    northeast = roomPrivateFoyer
-    south = roomBackAlley
+    northeast = doorFromGreenRoomToPrivate
+    south = doorFromGreenRoomToAlley
+    out asExit(south)
     west = roomWomensRestroom
+    
+    roomParts = [
+        graffiti,
+        defaultFloor,
+        defaultCeiling
+    ]
 ;
 
-+ metallicCurtainGreen: ThroughPassage 
++ metallicCurtainGreen: ThroughPassage, Enterable
     name = 'gaudy metallic curtain' 
-    vocabWords = 'gaudy metallic curtain*curtains doorway door'
-    desc = "It's a flimsy piece of cloth just barely big enough to act 
-        as a barrier between the stage and the Green Room."
+    vocabWords = 'gaudy metallic curtain*curtains stage'
+    desc = "In the doorway to the north, there hangs a flimsy piece of cloth 
+        just barely big enough to act as a barrier between the stage and the dressing room."
     masterObject = metallicCurtain
 ;
+
++ doorFromGreenRoomToPrivate: AutoClosingDoor, Enterable
+    name = 'door to the private rooms' 
+    vocabWords = 'private rooms'
+    desc = "A plain brown door leads to the private rooms."
+;
+
++ doorFromGreenRoomToAlley: AutoClosingDoor, Enterable
+    name = 'back door of the club' 
+    vocabWords = 'alley outside back door backdoor rear reardoor'
+    desc = "A heavy door opens outward to the grimy alley behind the club."
+;
+
 
 + metalChair : Chair
     name = 'metal chair'
@@ -71,8 +92,8 @@ roomGreen: Room
 
 + vanity : Fixture
     name = 'vanity'
-    vocabWords = 'vanity makeup dressing counter mirror table'
-    desc = "Bright lights surround the mirror, allowing anyone who 
+    vocabWords = 'vanity*vanities counter*counters mirror*mirrors table*tables'
+    desc = "Bright lights surround the mirror of a vanity, allowing anyone who 
         gazes into it to see themselves with stark clarity. And if 
         you've been partying for three days straight, that's not a 
         good thing. There's a small shelf under the mirror for 
@@ -89,7 +110,7 @@ roomGreen: Room
         hairspray, glitter, and other whatnots."
 ;
 
-+ graffiti : Fixture, Readable
++ graffiti : DefaultWall, Readable
     name = 'graffiti'
     vocabWords = 'graffiti writing wall scribbles doodles message*messages
         heiroglyphic*heiroglyphics'
@@ -97,7 +118,18 @@ roomGreen: Room
         which have dulled over the years to look like indistinct 
         hieroglyphics. Every now and then, there's a new message – 
         either to the world or directed at a particular dancer. 
-        It's kind of like a primitive Twitter feed."
+        It's kind of like a primitive Twitter feed. I can read this
+        graffiti, and sometimes glean some sage wisdom handed down
+        from strippers past."
+    
+    readDesc() {
+        "INSERT GRAFFITI MESSAGES HERE";
+    }
+    
+    dobjFor(Look)
+    {
+        verify() { logicalRank(120, 'wall'); }
+    }    
 ;
 
 + metalClothingBar : Fixture
@@ -112,7 +144,7 @@ roomGreen: Room
 + clotheshangers : Fixture
     name = 'hangers'
     isPlural = true
-    vocabWords = 'wire clotheshanger*clotheshangers hanger*hangers'
+    vocabWords = 'wire clotheshanger*clotheshangers hanger*hangers coathanger*coathangers'
     desc = "These are the kind that clothes are hung on when they 
         come back from the dry cleaners. At present, they hold my 
         two costumes."
