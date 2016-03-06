@@ -7,8 +7,8 @@ build:ext resfile cnt:I:0
 src win edit mode:Untitled1:S:0:TADS 3
 build:defaults set:I:1
 src win split:rt3.t:S:0:0.000000
-watch win:vis:I:0
 watch win:pos:R:312,749,596,860
+watch win:vis:I:0
 line wrap:roomPrivateFoyer.t:S:0:N
 src win selrange:roomBathroom.t:S:0:0,0
 src win selrange:roomBathroom.t:S:1:970,970
@@ -16,12 +16,12 @@ src win pos:roomBathroom.t:R:156,156,872,587
 src win split:roomBackAlley.t:S:0:0.000000
 build:c ops:I:0
 SearchToolbar:rebarNewLine:I:0
-MenuBar:rebarVis:I:1
-log win pos::R:423,124,1364,743
 log win vis::I:1
+log win pos::R:423,124,1364,743
+MenuBar:rebarVis:I:1
 line wrap:roomGreen.t:S:0:N
-line wrap:roomStage.t:S:0:N
 DocToolbar:rebarIndex:I:3
+line wrap:roomStage.t:S:0:N
 src win split:roomStreet.t:S:0:0.000000
 build:include_files-sys:S:0:system
 build:include_files-sys:S:1:system
@@ -57,17 +57,17 @@ build:zipfile:S:0:rt3.zip
 src win split:LatchedDoor.t:S:0:0.000000
 src win selrange:roomBackAlley.t:S:0:0,0
 src win selrange:roomBackAlley.t:S:1:564,564
-src win pos:roomBackAlley.t:R:0,0,932,609
 watch win:sep xpos 0:I:142
+src win pos:roomBackAlley.t:R:0,0,932,609
 watch win:sep xpos 1:I:142
 watch win:sep xpos 2:I:142
+watch win:sep xpos 3:I:142
 build:installer options:S:0:name=rt3
 build:installer options:S:1:savext=rt3
-watch win:sep xpos 3:I:142
 search:start at top:I:0
-line wrap:Untitled1:S:0:
-src win edit mode:rt3.t:S:0:TADS 3
 src win split:clothing.t:S:0:0.000000
+src win edit mode:rt3.t:S:0:TADS 3
+line wrap:Untitled1:S:0:
 src win selrange:roomStreet.t:S:0:0,0
 src win selrange:roomStreet.t:S:1:333,333
 src win pos:roomStreet.t:R:26,26,759,457
@@ -76,69 +76,69 @@ src win edit mode:roomBackAlley.t:S:0:TADS 3
 proj search:exact case:I:0
 src win selrange:roomMain.t:S:0:0,0
 src win selrange:roomMain.t:S:1:290,290
-src win split:actorRachel.t:S:0:0.000000
 src win pos:roomMain.t:R:636,237,1510,1061
+src win split:actorRachel.t:S:0:0.000000
 DocToolbar:rebarVis:I:1
-auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
-auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 src win selrange:LatchedDoor.t:S:0:0,0
 src win selrange:LatchedDoor.t:S:1:151,151
+auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
+auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 src win split:stripperClass.t:S:0:0.000000
 SearchToolbar:rebarIndex:I:2
 src win edit mode:roomStreet.t:S:0:TADS 3
 search:wrap:I:1
 auto-script:next-id:I:32
-line wrap:roomBathroom.t:S:0:N
 SearchToolbar:rebarWidth:I:281
+line wrap:roomBathroom.t:S:0:N
 src win selrange:clothing.t:S:0:0,0
 src win selrange:clothing.t:S:1:139,139
 src win pos:clothing.t:R:344,142,1195,637
+search:text:S:0:table
+search:text:S:1:
 docking config::S:0:CL
 docking config::S:1:W0,421,270,2,1072,302,1222,D,L,project win
 docking config::S:2:W0,421,150,175,1072,345,1222,D,L,script win
 docking config::S:3:CB
 docking config::S:4:W3,270,170,304,718,604,868,D,B,watch win
 docking config::S:5:W3,270,170,2,718,302,868,D,B,locals win
-docking config::S:6:W-1,170,170,715,33,1440,603,M,R,log win
-docking config::S:7:W-1,170,170,26,77,877,692,M,R,stack win
-search:text:S:0:table
-search:text:S:1:
+docking config::S:6:W-1,170,170,26,77,877,692,M,R,stack win
+docking config::S:7:W-1,170,170,715,33,1440,603,M,R,log win
 src win edit mode:roomMain.t:S:0:TADS 3
-locals win:vis:I:0
 locals win:pos:R:10,749,294,860
+locals win:vis:I:0
 main win max::I:1
 proj search:collapse spaces:I:0
 src win edit mode:LatchedDoor.t:S:0:TADS 3
 search:exact case:I:0
 src win selrange:actorRachel.t:S:0:0,0
 src win selrange:actorRachel.t:S:1:147,147
-src win pos:actorRachel.t:R:559,66,1390,789
-build:webpage dir:S:0:web
 mdi win list::S:0::log
-mdi win list::S:1:LatchedDoor.t
-mdi win list::S:2:roomBackAlley.t
-mdi win list::S:3:roomGreen.t
-mdi win list::S:4:roomPrivateFoyer.t
-mdi win list::S:5:roomBathroom.t
+mdi win list::S:1:roomBathroom.t
+mdi win list::S:2:LatchedDoor.t
+mdi win list::S:3:roomBackAlley.t
+mdi win list::S:4:roomGreen.t
+mdi win list::S:5:roomPrivateFoyer.t
 mdi win list::S:6:roomMain.t
 mdi win list::S:7:clothing.t
-build:srczipfile:S:0:rt3Source.zip
+build:webpage dir:S:0:web
+src win pos:actorRachel.t:R:559,66,1390,789
 main win pos::R:-8,-8,1374,776
+build:srczipfile:S:0:rt3Source.zip
 proj search:whole word:I:0
 src win split:versionInfo.t:S:0:0.000000
 help win vis::I:0
+build:ignore case:I:0
 src win selrange:stripperClass.t:S:0:0,0
 src win selrange:stripperClass.t:S:1:107,107
-build:ignore case:I:0
 src win pos:stripperClass.t:R:569,477,1420,972
-build:exe:S:0:rt3.exe
 docsearch win vis::I:0
+build:exe:S:0:rt3.exe
 src win edit mode:clothing.t:S:0:TADS 3
-line wrap:rt3.t:S:0:N
-script win:vis:I:1
 script win:pos:R:2,613,414,743
-src win split:roomPrivateFoyer.t:S:0:0.000000
+script win:vis:I:1
+line wrap:rt3.t:S:0:N
 build:use charmap:I:0
+src win split:roomPrivateFoyer.t:S:0:0.000000
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
 line wrap:roomBackAlley.t:S:0:N
@@ -168,8 +168,8 @@ build:include_files:S:20:strcomp.h
 build:include_files:S:21:en_us.h
 SearchToolbar:rebarVis:I:1
 MenuBar:rebarNewLine:I:0
-src win edit mode:stripperClass.t:S:0:TADS 3
 src win split:roomGreen.t:S:0:0.000000
+src win edit mode:stripperClass.t:S:0:TADS 3
 proj search:regex:I:0
 src win split:roomStage.t:S:0:0.000000
 locals win:sep xpos 0:I:142
@@ -179,15 +179,15 @@ search:whole word:I:0
 src win selrange:versionInfo.t:S:0:0,0
 src win selrange:versionInfo.t:S:1:416,416
 src win pos:versionInfo.t:R:208,195,1059,810
-build:debug_image_file:S:0:debug\rt3.t3
 DebugToolbar:rebarNewLine:I:1
+build:debug_image_file:S:0:debug\rt3.t3
 search dlg:old searches:S:0:table
 search dlg:old searches:S:1:tabl
 search dlg:old searches:S:2:graffiti
 search dlg:old searches:S:3:
+line wrap:roomMain.t:S:0:N
 src win selrange:roomPrivateFoyer.t:S:0:0,0
 src win selrange:roomPrivateFoyer.t:S:1:685,706
-line wrap:roomMain.t:S:0:N
 src win pos:roomPrivateFoyer.t:R:273,177,1124,672
 src win split:%tads%lib\adv3\exits.t:S:0:0.000000
 find dialog:pos:R:1058,594,1502,846
@@ -203,10 +203,10 @@ src win pos:roomGreen.t:R:200,366,1186,1011
 search:regex:I:0
 src win selrange:roomStage.t:S:0:0,0
 src win selrange:roomStage.t:S:1:1267,1267
-mdi tab order::S:0:5,7,6,3,1,4,0,2
 src win pos:roomStage.t:R:365,362,1350,952
-src win split:Untitled1:S:0:0.000000
+mdi tab order::S:0:1,7,6,4,2,5,3,0
 line wrap:clothing.t:S:0:N
+src win split:Untitled1:S:0:0.000000
 build:rlsgam:S:0:rt3.t3
 EditToolbar:rebarVis:I:1
 src win edit mode:roomPrivateFoyer.t:S:0:TADS 3
@@ -222,31 +222,31 @@ line wrap:stripperClass.t:S:0:N
 src win edit mode:roomStage.t:S:0:TADS 3
 MenuBar:rebarIndex:I:0
 mdi win title::S:0:
-mdi win title::S:1:LatchedDoor.t
-mdi win title::S:2:roomBackAlley.t
-mdi win title::S:3:roomGreen.t
-mdi win title::S:4:roomPrivateFoyer.t
-mdi win title::S:5:roomBathroom.t
+mdi win title::S:1:roomBathroom.t
+mdi win title::S:2:LatchedDoor.t
+mdi win title::S:3:roomBackAlley.t
+mdi win title::S:4:roomGreen.t
+mdi win title::S:5:roomPrivateFoyer.t
 mdi win title::S:6:roomMain.t
 mdi win title::S:7:clothing.t
-search:dir:I:1
 src win split:roomBathroom.t:S:0:0.000000
-build:installer prog:S:0:rt3_Setup.exe
+search:dir:I:1
 MenuBar:rebarWidth:I:-1
-project win:vis:I:1
+build:installer prog:S:0:rt3_Setup.exe
 project win:pos:R:2,121,414,587
+project win:vis:I:1
 src win selrange:Untitled1:S:0:0,0
 src win selrange:Untitled1:S:1:0,0
-auto-script:dir:S:0:Scripts
 src win pos:Untitled1:R:569,477,1420,972
+auto-script:dir:S:0:Scripts
 src win pos:Untitled2:R:199,140,1050,755
-stack win vis::I:0
-filesearch win vis::I:0
-stack win pos::R:457,232,1292,808
 src win pos:Untitled3:R:0,0,733,431
+stack win pos::R:457,232,1292,808
+filesearch win vis::I:0
+stack win vis::I:0
 src win pos:Untitled4:R:26,26,759,457
-DebugToolbar:rebarIndex:I:4
 src win pos:Untitled5:R:156,156,872,587
+DebugToolbar:rebarIndex:I:4
 src win edit mode:%tads%lib\adv3\exits.t:S:0:TADS 3
 searchMode::I:1
 

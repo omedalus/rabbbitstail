@@ -65,23 +65,25 @@ roomWomensRestroom: Room
         "It's a tall fixture with a bright golden faucet that has 
         served for many a \"whore's bath\" on days I didn't quite make 
         it home for a proper shower. Sometimes the walk of shame leads 
-        not to home but to work, if you know what I mean. There's a 
-        sign affixed just above the sink. ";
+        not to home but to work, if you know what I mean. ";
+        
+        if (isOn) {
+            "Water is currently gushing from the tap. ";
+        }
+        
+        "There's a sign affixed just above the sink. ";
     }
-    
-    dobjFor(TurnOn) {
-        action(){
+        
+    makeOn(val)
+    {
+        inherited(val);
+        if (val) {
             "I turn a knob on the faucet. A cold stream of water runs
             into the sink.";
-            
-        }
-    }
-    
-    dobjFor(TurnOff) {
-        action() {
+        } else {
             "I shut off the water.";
         }
-    }
+    } 
 ;
 
 + womenBathroomLightSwitch : Switch, Fixture 
@@ -91,21 +93,17 @@ roomWomensRestroom: Room
 
     isOn = true
 
-    dobjFor(TurnOn) {
-        action(){
-            inherited();
+    makeOn(val)
+    {
+        inherited(val);
+        if (val) {
             "I turn on the bathroom lights. Same ol' bathroom. ";
-            roomWomensRestroom.brightness = 3;            
-        }
-    }
-    
-    dobjFor(TurnOff) {
-        action() {
-            inherited();
+            roomWomensRestroom.brightness = 3;         
+        } else {
             "I flip the lights off. I can barely see a thing in here. ";
             roomWomensRestroom.brightness = 2;
         }
-    }    
+    }
 ;
 
 
@@ -125,13 +123,75 @@ roomWomensRestroom: Room
         Looks like it was picked up from the bargain bin of Porns-R-Us. "
 ;
 
-+ womensBathroomToilet : Decoration
++ womensBathroomToilet : Fixture, Container
     name = 'toilet'
     vocabWords = 'toilet/potty'
     desc = "What can I say? It's what a girl has to use when nature calls."
+    
+    dobjFor(Use) {
+        action() {
+            "I flush the toilet. Fwoosh!";
+        }
+    }
+    
+    dobjFor(LookIn) {
+        verify() {
+            failCheck('Look in the toilet? I\'d really rather not.');
+        }
+    }
 ;
 
++ womensBathroomGarbage : Fixture
+    name = 'garbage can'
+    vocabWords = 'garbage trash refuse can/garbage/trash/refuse'
+    desc = "The small garbage can in the corner is filled with tampon
+        wrappers, filthy paper towels, and other horrid unmentionables."
 
+    dobjFor(Search) {
+        verify() {
+            if (roomWomensRestroom.brightness < 3) {
+                failCheck('Not only do I not <em>want</em> to dig through the
+                    trash, but more to the point it\'s too dark in here to do so anyway.');
+            }
+        }
+        action() {
+            "I search through the trash.";
+        }
+    }
+;
+
++ womensBathroomToiletPaperRoll : Thing
+    name() {
+        return isInInitState ? 'roll of toilet paper' : 'sheet of toilet paper';
+    }
+    vocabWords = 'toilet paper tissue paper/tissue/roll/sheet*sheets/square*squares'
+    desc() {
+        if (isInInitState) {
+            "The toilet paper roll is down to its last few sheets.";
+        } else {
+            "The last few sheets of toilet paper. Better make them last!";
+        }
+    }
+    
+    dobjFor(Take) {
+        action() {
+            if (isInInitState) {
+                "I snag the last few sheets of toilet paper, leaving
+                a bare cardboard tube.";
+                womensBathroomToiletPaperRollTube.discover();
+            } else {
+                "I pick up the toilet paper sheets.";
+            }
+            inherited();
+        }
+    }
+;
+
++ womensBathroomToiletPaperRollTube : Hidden
+    name = 'cardboard tube'
+    vocabWords = 'cardboard toilet paper tube/roll'
+    desc = "A six-inch cardboard tube that once held toilet paper."
+;
 
 
 
