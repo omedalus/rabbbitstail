@@ -6,7 +6,7 @@
 roomGreen: Room
     name = 'Dressing Room'
     vocabWords = 'green dressing room'
-    destName = 'the dressing room'
+    destName = 'dressing room'
     desc = "The dressing area for the dancers and waitresses. It's a small, seedy-looking room. 
         No one has made any effort to make it comfortable or inviting. It's
         just a place to change costumes or take a quick breather from 
@@ -33,7 +33,7 @@ roomGreen: Room
     northeast = doorFromGreenRoomToPrivate
     south = doorFromGreenRoomToAlley
     out asExit(south)
-    west = roomWomensRestroom
+    west = doorFromGreenRoomToWomensRestroom
     
     roomParts = [
         graffiti,
@@ -44,36 +44,54 @@ roomGreen: Room
 
 + metallicCurtainGreen: ThroughPassage, Enterable
     name = 'gaudy metallic curtain' 
-    vocabWords = 'gaudy metallic curtain*curtains stage'
+    vocabWords = 'gaudy metallic curtain*curtains/stage'
     desc = "In the doorway to the north, there hangs a flimsy piece of cloth 
-        just barely big enough to act as a barrier between the stage and the dressing room."
+        just barely big enough to act as a barrier between the stage and the dressing room. "
     masterObject = metallicCurtain
 ;
 
-+ doorFromGreenRoomToPrivate: AutoClosingDoor, Enterable
++ doorFromGreenRoomToPrivate: QuietAutoClosingDoor, Enterable
     name = 'door to the private rooms' 
-    vocabWords = 'private vip dance room*rooms/lounge'
-    desc = "A plain brown door leads to the private rooms."
+    vocabWords = 'door to private vip dance room*rooms/lounge/door'
+    desc = "A plain brown door leads to the private rooms. "
 ;
 
-+ doorFromGreenRoomToAlley: AutoClosingDoor, Enterable
++ doorFromGreenRoomToAlley: LatchLockableAutoClosingDoor, Enterable
     name = 'back door of the club' 
-    vocabWords = 'alley outside back door backdoor rear reardoor'
-    desc = "A heavy door opens outward to the grimy alley behind the club."
+    vocabWords = 'door to back rear outside door/alley/outside/backdoor/reardoor'
+    desc = "A heavy door opens outward to the grimy alley behind the club. 
+        It can be locked from this side with a deadbolt. "
+    
+    latch = doorFromGreenRoomToAlleyDeadbolt
 ;
 
-+ doorFromGreenRoomToWomensRestroom: AutoClosingDoor, Enterable
+++ doorFromGreenRoomToAlleyDeadbolt : Lockable, Fixture 
+    name = 'deadbolt'
+    vocabWords = 'deadbolt deadbolt/lock'
+    desc = "A deadbolt that locks the back door. The manager prefers for us to
+        keep it locked, but we wouldn't want to accidentally lock each other
+        out or something."
+    
+    initiallyLocked = true
+    
+    dobjFor(Close) remapTo(Lock, self)
+    dobjFor(Open) remapTo(Unlock, self)
+;
+
++ doorFromGreenRoomToWomensRestroom: LatchLockableAutoClosingDoor, Enterable
     name = 'door to the ladies\' room' 
-    vocabWords = 'ladies ladies\' womens women\'s bathroom/restroom/toilet/loo/head'
-    desc = "The door has a plaque saying \"LADIES\". Someone wrote below it, \"None here!\""
+    vocabWords = 'ladies ladies\' womens women\'s bathroom restroom toilet loo head door'
+    desc = "The door has a plaque saying \"LADIES\". Someone wrote below it, \"None here!\" "
+    
+    masterObject = doorFromWomensRestroomToGreenRoom    
 ;
 
 
 
 + metalChair : Chair
     name = 'metal chair'
-    vocabWords = 'cheap creaky folding metal chair*chairs seat*seats'
-    desc = "The Green Room is stocked with cheap, khaki folding chairs, the 
+    vocabWords = 'cheap creaky folding metal chair*chairs/seat*seats'
+    desc = "The Green Room is stocked with cheap folding chairs, the 
         kind that are used in high school cafeterias, which is probably
         where they were stolen from. They're creaky and uncomfortable 
         and if you forget to 
@@ -87,7 +105,7 @@ roomGreen: Room
         verify()
         {
             illogical('I\'d look pretty silly wandering around the club 
-                carrying a metal chair.'); 
+                carrying a chair.'); 
         }
     }    
 ;
@@ -95,14 +113,14 @@ roomGreen: Room
 + alleyWindow : RoomPart
     name = 'window'
     vocabWords = 'small high narrow alley window*windows'
-    desc = "The small narrow window runs high on the wall. Even if I could 
+    desc = "The small narrow window is situated high on the wall. Even if I could 
         reach it, I still wouldn't be able to see the alley through 
         the layers of grime and dirt on the glass.<.p>"
 ;
 
 + vanity : Fixture
     name = 'vanity'
-    vocabWords = 'vanity*vanities counter*counters mirror*mirrors table*tables'
+    vocabWords = 'vanity*vanities/counter*counters/mirror*mirrors/table*tables'
     desc = "Bright lights surround the mirror of a vanity, allowing anyone who 
         gazes into it to see themselves with stark clarity. And if 
         you've been partying for three days straight, that's not a 
@@ -115,7 +133,7 @@ roomGreen: Room
 
 + shelf : Fixture
     name = 'shelf'
-    vocabWords = 'shelf cabinet drawer'
+    vocabWords = 'shelf/cabinet/drawer'
     desc = "A shelf beneath the vanity's mirror holds makeup,
         hairspray, glitter, and other whatnots."
 ;

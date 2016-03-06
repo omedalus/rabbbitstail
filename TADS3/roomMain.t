@@ -5,6 +5,7 @@
 
 roomMainHall: Room
     name = 'Main Hall'
+    destName = 'main hall'
     vocabWords = 'main hall floor seating customer area room'
     desc() {
         "The main floor of The Rabbit's Tail mostly consists of 
@@ -25,7 +26,7 @@ roomMainHall: Room
 
     south = stairsUpToFloor
     up asExit(south)
-    east = roomPrivateFoyer
+    east = doorFromMainToPrivate
     southwest = roomWomensRestroom
 ;
 
@@ -38,7 +39,7 @@ roomMainHall: Room
     dobjFor(Take) remapTo(Enter, self)    
 ;
 
-+ doorFromMainToPrivate: AutoClosingDoor, Enterable
++ doorFromMainToPrivate: QuietAutoClosingDoor, Enterable
     name = 'door to the private rooms' 
     vocabWords = 'door to the private vip dance room*rooms/lounge*lounges'
     desc = "A thick sound-muffled door leads to the private rooms."

@@ -3,9 +3,7 @@
 #include <adv3.h>
 #include <en_us.h>
 
-class Outfit : Wearable
-    vocabWords = "clothes/clothing/outfit/costume"
-    
+class Outfit : Wearable    
     dobjFor(Take) {
         action()
         {

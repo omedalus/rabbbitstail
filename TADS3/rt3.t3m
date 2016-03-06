@@ -23,15 +23,16 @@
 -source rt3
 -source versionInfo
 -source roomStage
+-source clothing
+-source LatchedDoor
+-source stripperClass
 -source actorRachel
 -source roomGreen
+-source roomBathroom
 -source roomPrivateFoyer
 -source roomMain
 -source roomBackAlley
 -source roomStreet
--source roomBathroom
--source clothing
--source stripperClass
 
 -res
 GameInfo.txt

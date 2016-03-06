@@ -12,20 +12,20 @@ roomPrivateFoyer: Room
     canBeNakedHere = true
     
     southwest = doorFromPrivateToGreenRoom
-    northwest = roomMainHall
+    northwest = doorFromPrivateToMain
     northeast = roomPrivate1
     east = roomPrivate2
     southeast = roomPrivate3
 ;
 
-+ doorFromPrivateToMain: AutoClosingDoor, Enterable
++ doorFromPrivateToMain: QuietAutoClosingDoor, Enterable
     name = 'door to the main hall' 
     vocabWords = 'door to the main hall/floor/area'
     desc = "A thick sound-muffled door leads to the main hall."
     masterObject = doorFromMainToPrivate
 ;
 
-+ doorFromPrivateToGreenRoom: AutoClosingDoor, Enterable
++ doorFromPrivateToGreenRoom: QuietAutoClosingDoor, Enterable
     name = 'door to the dressing room' 
     vocabWords = 'door to the dressing locker green room/dressingroom/lockerroom/greenroom'
     desc = "A plain brown door leads to the dressing room."
